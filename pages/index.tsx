@@ -13,9 +13,11 @@ const Home: NextPage = () => {
       <Container
         h="100vh"
         maxW="container.md"
+        centerContent
       >
         <Heading
           pt={3}
+          pb={4}
           textAlign="center"
         >
           Jasper Huynh
@@ -23,9 +25,13 @@ const Home: NextPage = () => {
         <Box
           display="flex"
           justifyContent="center"
+          pb={4}
         >
           <Image src="/images/jasper.jpg" alt="jasper" width={150} height={150} className={style.me} />
         </Box>
+        <Text>
+          Hi, I'm just happy to be here and learn from the best.
+        </Text>
       </Container>
     </>
   )

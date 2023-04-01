@@ -17,7 +17,7 @@ const NavLink = ({
         <Link href="/">
             <Button
                 size="sm"
-                variant="navbar"
+                variant="ghost"
             >
                 {title}
             </Button>
@@ -69,7 +69,7 @@ const Navbar = () => {
 
                 <Box flex={1} display="flex" justifyContent="flex-end">
                     <Button
-                        variant="navbar"
+                        variant="ghost"
                     >
                         <Link href="mailto:jasper123ya@live.com">
                             Email Me
