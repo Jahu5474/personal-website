@@ -16,7 +16,6 @@ const NavLink = ({
 
         <Link href="/">
             <Button
-                color="logo.900"
                 size="sm"
                 variant="navbar"
             >
@@ -35,7 +34,7 @@ const Navbar = () => {
             <Container
                 display="flex"
                 p={2}
-                maxW="container.lg"
+                maxW="container.md"
                 flexWrap="wrap"
                 alignItems="center"
             >
@@ -47,13 +46,12 @@ const Navbar = () => {
                     >
                         <Link href="/">
 
-                            Jasper Huynh
+                            Jasper H.
                         </Link>
                     </Heading>
 
                 </Flex>
                 <Stack
-                    color="logo.900"
                     direction={{ base: "column", md: "row" }}
                     display={{ base: "none", md: "flex" }}
                     width={{ base: "full", md: "auto" }}
