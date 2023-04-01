@@ -9,9 +9,9 @@ import { NextPage } from 'next';
 const Home: NextPage = () => {
   return (
     <>
-      <Heading>
+      {/* <Heading>
         Jasper Huynh
-      </Heading>
+      </Heading> */}
     </>
   )
 }
