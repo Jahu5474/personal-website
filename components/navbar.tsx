@@ -3,6 +3,7 @@ import { Heading, Stack, Box, Container, Text, Flex, Menu, MenuButton, MenuList,
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Link from 'next/link'
 import { useColorModeValue } from '@chakra-ui/react';
+import ThemeToggleButton from './theme-toggle-button';
 
 const NavLink = ({
     title,
@@ -15,7 +16,7 @@ const NavLink = ({
 
         <Link href="/">
             <Button
-                color="logo.100"
+                color="logo.900"
                 size="sm"
                 variant="navbar"
             >
@@ -68,13 +69,15 @@ const Navbar = () => {
                     <NavLink title="Projects" />
                 </Stack>
 
-                <Box flex={1} align="right">
-                    {/* <ThemeToggleButton /> */}
+                <Box flex={1} display="flex" justifyContent="flex-end">
                     <Button
                         variant="navbar"
                     >
-                        Email ME
+                        <Link href="mailto:jasper123ya@live.com">
+                            Email Me
+                        </Link>
                     </Button>
+                    <ThemeToggleButton />
                     <Box ml={2} display={{ base: "inline-block", md: "none" }}>
                         <Menu>
                             <MenuButton
