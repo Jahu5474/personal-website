@@ -1,5 +1,6 @@
 import React from 'react';
-import { Heading, Stack } from '@chakra-ui/react'
+import { Heading, Stack, Box, Container, Text, Flex, Menu, MenuButton, MenuList, MenuItem, IconButton, Button } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons';
 import Link from 'next/link'
 import { useColorModeValue } from '@chakra-ui/react';
 
@@ -9,15 +10,19 @@ const NavLink = ({
 }: {
     title: string,
 }) => {
-    const titleColor = useColorModeValue("logo.100", "logo.900");
-
     return (
 
-        <Heading
-            color={titleColor}
-        >
-            {title}
-        </Heading>
+
+        <Link href="/">
+            <Button
+                color="logo.100"
+                size="sm"
+                variant="navbar"
+            >
+                {title}
+            </Button>
+        </Link>
+
 
     )
 }
@@ -26,17 +31,92 @@ const Navbar = () => {
 
     return (
         <>
-            <Stack
-                color="logo.900"
-                fontWeight={700}
+            <Container
+                display="flex"
+                p={2}
+                maxW="container.lg"
+                flexWrap="wrap"
+                alignItems="center"
             >
-                <NavLink title="Jasper Huynh" />
-            </Stack>
+                <Flex
+                    align="center"
+                >
+                    <Heading
+                        size="sm"
+                    >
+                        <Link href="/">
+
+                            Jasper Huynh
+                        </Link>
+                    </Heading>
+
+                </Flex>
+                <Stack
+                    color="logo.900"
+                    direction={{ base: "column", md: "row" }}
+                    display={{ base: "none", md: "flex" }}
+                    width={{ base: "full", md: "auto" }}
+                    alignItems="center"
+                    flexGrow={3}
+                    gap={3}
+                    justify="center"
+                    alignContent="center"
+                >
+                    <NavLink title="About" />
+                    <NavLink title="Blog" />
+                    <NavLink title="Social" />
+                    <NavLink title="Projects" />
+                </Stack>
+
+                <Box flex={1} align="right">
+                    {/* <ThemeToggleButton /> */}
+                    <Button
+                        variant="navbar"
+                    >
+                        Email ME
+                    </Button>
+                    <Box ml={2} display={{ base: "inline-block", md: "none" }}>
+                        <Menu>
+                            <MenuButton
+                                as={IconButton}
+                                aria-label='Options'
+                                icon={<HamburgerIcon />}
+                                variant='outline'
+                            />
+                            <MenuList>
+                                <Link href="/brand" passHref>
+                                    <MenuItem >
+                                        Brands
+                                    </MenuItem>
+                                </Link>
+
+                                <Link href="contactlens" passHref>
+                                    <MenuItem >
+                                        Contact Lens
+                                    </MenuItem>
+                                </Link>
+
+                                <Link href="Location" passHref>
+                                    <MenuItem >
+                                        Location
+                                    </MenuItem>
+                                </Link>
+
+                                <Link href="contactus" passHref>
+                                    <MenuItem >
+                                        Contact Us
+                                    </MenuItem>
+                                </Link>
+                            </MenuList>
+                        </Menu>
+                    </Box>
+                </Box>
+            </Container>
 
         </>
     )
 
-}
+};
 
 export default Navbar;
 
