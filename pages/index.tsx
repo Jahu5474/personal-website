@@ -32,6 +32,9 @@ const Home: NextPage = () => {
         <Text>
           Hi, I'm just happy to be here and learn from the best.
         </Text>
+        <Text>
+          I am broke and need a job.
+        </Text>
       </Container>
     </>
   )
