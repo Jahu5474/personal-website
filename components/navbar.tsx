@@ -28,15 +28,25 @@ const NavLink = ({
 }
 
 const Navbar = () => {
+    const bgColor = useColorModeValue("rgba(255,255,255,.2)", "rgba(5,1,13,.6)");
+
 
     return (
         <>
-            <Container
+            <Flex
                 display="flex"
                 p={2}
-                maxW="container.md"
+                w="full"
                 flexWrap="wrap"
                 alignItems="center"
+                justify="center"
+                backdropFilter="auto"
+                backdropBlur="xl"
+                backdropSaturate="1.5"
+                zIndex="1"
+                bg={bgColor}
+
+
             >
                 <Flex
                     align="center"
@@ -112,7 +122,7 @@ const Navbar = () => {
                         </Menu>
                     </Box>
                 </Box>
-            </Container>
+            </Flex>
 
         </>
     )

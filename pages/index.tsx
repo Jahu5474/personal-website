@@ -10,32 +10,36 @@ import style from '../styles/app.module.css'
 const Home: NextPage = () => {
   return (
     <>
-      <Container
-        h="100vh"
-        maxW="container.md"
-        centerContent
+      <Box
+        bg="gray.50"
       >
-        <Heading
-          pt={3}
-          pb={4}
-          textAlign="center"
+        <Container
+          h="100vh"
+          maxW="container.md"
+          centerContent
         >
-          Jasper Huynh
-        </Heading>
-        <Box
-          display="flex"
-          justifyContent="center"
-          pb={4}
-        >
-          <Image src="/images/jasper.jpg" alt="jasper" width={150} height={150} className={style.me} />
-        </Box>
-        <Text>
-          Hi, I'm just happy to be here and learn from the best.
-        </Text>
-        <Text>
-          I am broke and need a job.
-        </Text>
-      </Container>
+          <Heading
+            pt={3}
+            pb={4}
+            textAlign="center"
+          >
+            Jasper Huynh
+          </Heading>
+          <Box
+            display="flex"
+            justifyContent="center"
+            pb={4}
+          >
+            <Image src="/images/jasper.jpg" alt="jasper" width={150} height={150} className={style.me} />
+          </Box>
+          <Text>
+            Hi, I'm just happy to be here and learn from the best.
+          </Text>
+          <Text>
+            I am broke and need a job.
+          </Text>
+        </Container>
+      </Box>
     </>
   )
 }
