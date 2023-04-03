@@ -18,6 +18,10 @@ const NavLink = ({
             <Button
                 size="sm"
                 variant="ghost"
+                _hover={{
+                    bg: "gray",
+                    color: "white"
+                }}
             >
                 {title}
             </Button>
@@ -67,7 +71,7 @@ const Navbar = () => {
                     width={{ base: "full", md: "auto" }}
                     alignItems="center"
                     flexGrow={3}
-                    gap={3}
+                    gap={12}
                     justify="center"
                     alignContent="center"
                 >
@@ -80,6 +84,10 @@ const Navbar = () => {
                 <Box flex={1} display="flex" justifyContent="flex-end">
                     <Button
                         variant="ghost"
+                        _hover={{
+                            bg: "gray",
+                            color: "white"
+                        }}
                     >
                         <Link href="mailto:jasper123ya@live.com">
                             Email Me

@@ -10,9 +10,7 @@ import style from '../styles/app.module.css'
 const Home: NextPage = () => {
   return (
     <>
-      <Box
-        bg="gray.50"
-      >
+      <Box>
         <Container
           h="100vh"
           maxW="container.md"
@@ -33,7 +31,7 @@ const Home: NextPage = () => {
             <Image src="/images/jasper.jpg" alt="jasper" width={150} height={150} className={style.me} />
           </Box>
           <Text>
-            Hi, I'm just happy to be here and learn from the best.
+            I grew a passion for coding through a friend which have helped me along during my journey in being a self taught full stack developer. As a child, technology have always peaked my interest and started coding during the summer of 2022.
           </Text>
           <Text>
             I am broke and need a job.
