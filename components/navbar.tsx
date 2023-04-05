@@ -103,27 +103,27 @@ const Navbar = () => {
                                 variant='outline'
                             />
                             <MenuList>
-                                <Link href="/brand" passHref>
+                                <Link href="about" passHref>
                                     <MenuItem >
-                                        Brands
+                                        About
                                     </MenuItem>
                                 </Link>
 
-                                <Link href="contactlens" passHref>
+                                <Link href="blog" passHref>
                                     <MenuItem >
-                                        Contact Lens
+                                        Blog
                                     </MenuItem>
                                 </Link>
 
-                                <Link href="Location" passHref>
+                                <Link href="social" passHref>
                                     <MenuItem >
-                                        Location
+                                        Social
                                     </MenuItem>
                                 </Link>
 
-                                <Link href="contactus" passHref>
+                                <Link href="projects" passHref>
                                     <MenuItem >
-                                        Contact Us
+                                        Projects
                                     </MenuItem>
                                 </Link>
                             </MenuList>
