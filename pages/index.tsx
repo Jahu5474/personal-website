@@ -36,6 +36,9 @@ const Home: NextPage = () => {
           <Text>
             I am broke and need a job.
           </Text>
+          <Text>
+            Netflix hire me pls
+          </Text>
         </Container>
       </Box>
     </>
