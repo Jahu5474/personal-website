@@ -4,6 +4,8 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import Link from 'next/link'
 import { useColorModeValue } from '@chakra-ui/react';
 import ThemeToggleButton from './theme-toggle-button';
+import Image from 'next/image'
+import style from '../styles/app.module.css'
 
 const NavLink = ({
     title,
@@ -32,7 +34,6 @@ const NavLink = ({
 }
 
 const Navbar = () => {
-    const bgColor = useColorModeValue("rgba(255,255,255,.2)", "rgba(5,1,13,.6)");
 
 
     return (
@@ -44,27 +45,22 @@ const Navbar = () => {
                 flexWrap="wrap"
                 alignItems="center"
                 justify="center"
-                backdropFilter="auto"
-                backdropBlur="xl"
-                backdropSaturate="1.5"
-                zIndex="1"
-                bg={bgColor}
-
-
             >
-                <Flex
-                    align="center"
-                >
-                    <Heading
-                        size="sm"
+                <Link href="/">
+                    <Flex
+                        align="center"
                     >
-                        <Link href="/">
 
+                        <Image src="/images/jasper.png" alt="jasper" width={60} height={60} className={style.me} />
+                        <Heading
+                            fontSize="sm"
+                            pl={4}
+                        >
                             Jasper H.
-                        </Link>
-                    </Heading>
+                        </Heading>
 
-                </Flex>
+                    </Flex>
+                </Link>
                 <Stack
                     direction={{ base: "column", md: "row" }}
                     display={{ base: "none", md: "flex" }}

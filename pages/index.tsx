@@ -23,21 +23,10 @@ const Home: NextPage = () => {
           >
             Jasper Huynh
           </Heading>
-          <Box
-            display="flex"
-            justifyContent="center"
-            pb={4}
+          <Text
+            w="auto"
           >
-            <Image src="/images/jasper.jpg" alt="jasper" width={150} height={150} className={style.me} />
-          </Box>
-          <Text>
-            I grew a passion for coding through a friend which have helped me along during my journey in being a self taught full stack developer. As a child, technology have always peaked my interest and started coding during the summer of 2022.
-          </Text>
-          <Text>
-            I am broke and need a job.
-          </Text>
-          <Text>
-            Netflix hire me pls
+            I always enjoyed creating and using the creative side of me and through a friend I discovered the world of programming. As a child, technology have always peaked my interest and would always play around with them. I gained experience in coding by doing a web development online bootcamp in the summer of 2022. I am located in Vancouver, BC, Canada, where I will continue to grind hard and create things out of thin air with codes.
           </Text>
         </Container>
       </Box>
