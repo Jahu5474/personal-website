@@ -6,6 +6,7 @@ import { useColorModeValue } from '@chakra-ui/react';
 import ThemeToggleButton from './theme-toggle-button';
 import Image from 'next/image'
 import style from '../styles/app.module.css'
+import { motion } from 'framer-motion'
 
 const NavLink = ({
     title,
@@ -38,6 +39,7 @@ const Navbar = () => {
 
     return (
         <>
+
             <Flex
                 display="flex"
                 p={2}
@@ -46,12 +48,23 @@ const Navbar = () => {
                 alignItems="center"
                 justify="center"
             >
+
+
                 <Link href="/">
                     <Flex
                         align="center"
                     >
-
-                        <Image src="/images/jasper.png" alt="jasper" width={60} height={60} className={style.me} />
+                        <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ rotate: 360, scale: 1 }}
+                            transition={{
+                                type: 'spring',
+                                stiffness: 100,
+                                damping: 20,
+                            }}
+                        >
+                            <Image src="/images/jasper.png" alt="jasper" width={60} height={60} className={style.me} />
+                        </motion.div>
                         <Heading
                             fontSize="sm"
                             pl={4}

@@ -10,6 +10,7 @@ import style from '../styles/app.module.css'
 const Home: NextPage = () => {
   return (
     <>
+
       <Box>
         <Container
           h="100vh"
