@@ -15,14 +15,17 @@ const Home: NextPage = () => {
         <Container
           h="100vh"
           maxW="container.md"
-          centerContent
         >
           <Heading
             pt={3}
             pb={4}
-            textAlign="center"
           >
-            Jasper Huynh
+            <Text as="span" color="blue.400">
+              Jasper Huynh,
+            </Text>
+            <Text>
+              Full Stack Developer
+            </Text>
           </Heading>
           <Text
             w="auto"

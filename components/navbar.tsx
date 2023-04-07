@@ -22,7 +22,7 @@ const NavLink = ({
                 size="sm"
                 variant="ghost"
                 _hover={{
-                    bg: "gray",
+                    bg: "blue.400",
                     color: "white"
                 }}
             >
@@ -66,8 +66,11 @@ const Navbar = () => {
                             <Image src="/images/jasper.png" alt="jasper" width={60} height={60} className={style.me} />
                         </motion.div>
                         <Heading
-                            fontSize="sm"
+                            fontSize="md"
                             pl={4}
+                            _hover={{
+                                color: "blue.400"
+                            }}
                         >
                             Jasper H.
                         </Heading>
@@ -85,16 +88,21 @@ const Navbar = () => {
                     alignContent="center"
                 >
                     <NavLink title="About" />
-                    <NavLink title="Blog" />
                     <NavLink title="Social" />
                     <NavLink title="Projects" />
+                    <NavLink title="Blog" />
                 </Stack>
 
-                <Box flex={1} display="flex" justifyContent="flex-end">
+
+                <Box
+                    flex={1}
+                    display="flex"
+                    justifyContent="flex-end">
                     <Button
+                        display={{ base: "none", md: "flex" }}
                         variant="ghost"
                         _hover={{
-                            bg: "gray",
+                            bg: "blue.400",
                             color: "white"
                         }}
                     >
@@ -133,6 +141,11 @@ const Navbar = () => {
                                 <Link href="projects" passHref>
                                     <MenuItem >
                                         Projects
+                                    </MenuItem>
+                                </Link>
+                                <Link href="email" passHref>
+                                    <MenuItem >
+                                        Email Me
                                     </MenuItem>
                                 </Link>
                             </MenuList>

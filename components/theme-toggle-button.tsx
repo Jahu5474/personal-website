@@ -11,7 +11,7 @@ const ThemeToggleButton = () => {
             icon={useColorModeValue(<FiMoon />, <FiSun />)}
             variant="transparent"
             _hover={{
-                color: "orange.400"
+                color: "blue.400"
             }}
             onClick={toggleColorMode}>
         </IconButton>
