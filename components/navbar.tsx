@@ -34,19 +34,20 @@ const NavLink = ({
 }
 
 const Navbar = () => {
-
+    const bgColor = useColorModeValue("rgba(255,255,255,.2)", "rgba(5,1,13,.6)");
 
     return (
         <>
 
             <Flex
-                display="flex"
-                p={2}
                 w="full"
-                flexWrap="wrap"
-                alignItems="center"
-                justify="center"
+                justifyContent="center"
                 position="fixed"
+                bg={bgColor}
+                backdropFilter="auto"
+                backdropBlur="xl"
+                backdropSaturate="1.5"
+                zIndex="1"
             >
                 <Flex
                     p="1em"
@@ -71,7 +72,7 @@ const Navbar = () => {
                                     damping: 20,
                                 }}
                             >
-                                <Image src="/images/jasper.png" alt="jasper" width={60} height={60} className={style.me} />
+                                <Image src="/images/jasper.png" alt="jasper" width={48} height={48} className={style.me} />
                             </motion.div>
                             <Heading
                                 fontSize="md"
