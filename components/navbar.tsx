@@ -96,11 +96,11 @@ const Navbar = () => {
                         justify="center"
                         alignContent="center"
                     >
+                        <Link href="/">
+                            <NavLink title="Home" />
+                        </Link>
                         <Link href="#about">
                             <NavLink title="About" />
-                        </Link>
-                        <Link href="#social">
-                            <NavLink title="Social" />
                         </Link>
                         <Link href="#projects">
                             <NavLink title="Projects" />
