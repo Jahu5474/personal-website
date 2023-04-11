@@ -5,6 +5,7 @@ import { Heading, Text, Stack, Container, Button, Box, Divider, Flex } from '@ch
 import { NextPage } from 'next';
 import style from '../styles/app.module.css';
 import Project from '../components/project';
+import RepoList from '@/components/repoList';
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +24,7 @@ const Home: NextPage = () => {
                 I always enjoyed creating and using the creative side of me and through a friend I discovered the world of programming. As a child, technology have always peaked my interest and would always play around with them. I gained experience in coding by doing a web development online bootcamp in the summer of 2022. I am located in Vancouver, BC, Canada, where I will continue to grind hard and create things out of thin air with codes.
               </Text>
             </Flex>
-            <Project repositories={[]} />
+            <RepoList />
           </Flex>
         </Flex>
       </Box>
