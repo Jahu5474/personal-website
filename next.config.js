@@ -3,4 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  webpack: (config) => {
+    config.resolve.alias["@"] = __dirname;
+    return config;
+  },
+};
