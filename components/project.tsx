@@ -1,5 +1,36 @@
+// import { Box, Heading, Text, VStack } from '@chakra-ui/react';
+// import { FaStar, FaCodeBranch } from 'react-icons/fa';
+// import { getRepoInfo } from '../components/github';
+
+// const Repo = () => {
+//     return (
+//         <>
+//             <Box>
+//                 <Heading>
+//                     My Projects
+//                 </Heading>
+//                 {/* <VStack align="flex-start">
+//                     <Heading>{repoInfo.name}</Heading>
+//                     <Text>{repoInfo.description}</Text>
+//                     <Box>
+//                         <FaStar /> {repoInfo.stargazers_count} stars
+//                     </Box>
+//                     <Box>
+//                         <FaCodeBranch /> {repoInfo.forks_count} forks
+//                     </Box>
+//                 </VStack> */}
+//             </Box>
+//         </>
+//     );
+// }
+
+// export default Repo;
+
+
+
 import { useEffect, useState } from 'react';
 import { Flex, Text } from '@chakra-ui/react';
+import { getRepoInfo } from '../components/github'
 
 const useFetchRepoData = (username: string, repoName: string, token: string) => {
     const [repoData, setRepoData] = useState<any>(null);
@@ -24,10 +55,10 @@ const useFetchRepoData = (username: string, repoName: string, token: string) => 
     return repoData;
 };
 
-const MyComponent = () => {
-    const username: string = 'your_username';
-    const repoName: string = 'your_repository_name';
-    const token: string = 'your_personal_access_token';
+const Project = () => {
+    const username: string = 'Jahu5474';
+    const repoName: string = 'Creative-Eyecare-Centre';
+    const token: any = process.env.GITHUB_ACCESS_TOKEN;
 
     const repoData = useFetchRepoData(username, repoName, token);
 
@@ -49,4 +80,4 @@ const MyComponent = () => {
     );
 };
 
-export default MyComponent;
+export default Project;
