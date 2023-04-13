@@ -1,33 +1,3 @@
-// import { Box, Heading, Text, VStack } from '@chakra-ui/react';
-// import { FaStar, FaCodeBranch } from 'react-icons/fa';
-// import { getRepoInfo } from '../components/github';
-
-// const Repo = () => {
-//     return (
-//         <>
-//             <Box>
-//                 <Heading>
-//                     My Projects
-//                 </Heading>
-//                 {/* <VStack align="flex-start">
-//                     <Heading>{repoInfo.name}</Heading>
-//                     <Text>{repoInfo.description}</Text>
-//                     <Box>
-//                         <FaStar /> {repoInfo.stargazers_count} stars
-//                     </Box>
-//                     <Box>
-//                         <FaCodeBranch /> {repoInfo.forks_count} forks
-//                     </Box>
-//                 </VStack> */}
-//             </Box>
-//         </>
-//     );
-// }
-
-// export default Repo;
-
-
-
 import { useEffect, useState } from 'react';
 import { Flex, Text } from '@chakra-ui/react';
 import { getRepoInfo } from '../components/github'
