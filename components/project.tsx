@@ -8,6 +8,9 @@ const Project = () => {
                 <Heading>
                     My Projects
                 </Heading>
+                <Heading>
+                    hi
+                </Heading>
 
             </Flex>
         </>
