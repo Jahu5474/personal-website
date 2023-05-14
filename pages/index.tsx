@@ -4,7 +4,8 @@ import { Inter } from 'next/font/google'
 import { Heading, Text, Stack, Container, Button, Box, Divider, Flex } from '@chakra-ui/react'
 import { NextPage } from 'next';
 import style from '../styles/app.module.css';
-import Project from '@/components/project';
+import Project from '../components/project';
+import Intro from '../components/intro'
 
 const Home: NextPage = () => {
   return (
@@ -24,10 +25,12 @@ const Home: NextPage = () => {
               </Text>
               <Project />
 
+
             </Flex>
           </Flex>
         </Flex>
       </Box>
+
     </>
   )
 }
