@@ -1,14 +1,18 @@
-import { Heading, Flex, Text, Card, SimpleGrid, CardHeader, CardBody, Button, CardFooter } from '@chakra-ui/react';
+import { Heading, Flex, Text, Card, SimpleGrid, CardHeader, CardBody, Button, CardFooter, Box } from '@chakra-ui/react';
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react';
 
 const Project = () => {
     const Size = 'md'
+
 
     return (
         <>
             <Heading
                 mt={4}
                 mb={4}
+                size={Size}
             >
                 Projects
             </Heading>
@@ -17,21 +21,41 @@ const Project = () => {
 
             >
 
-                <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(250px, 1fr))' height="300px">
+                <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(250px, 1fr))' height="350px">
                     <Card>
                         <CardHeader>
-                            <Heading size={Size}> Customer dashboard</Heading>
+                            <Heading size={Size}> Creative Eyecare Centre</Heading>
                         </CardHeader>
+                        <Flex
+                            justify="center"
+                        >
+                            <Image src="/images/creative-eyecare-centre.png" width={350} height={350} alt="creative" />
+                        </Flex>
+
                         <CardBody>
-                            <Text>View a summary of all your customers over the last month.</Text>
+                            <Text>
+                                Created a website with front and backend functionality for a optomitrist company where I was working at as a part-time worker.
+                            </Text>
                         </CardBody>
                         <CardFooter>
-                            <Button>View here</Button>
+                            <Link
+                                href="https://github.com/Jahu5474/Creative-Eyecare-Centre"
+                            >
+                                <Button
+                                    variant="outline"
+                                    _hover={{
+                                        bg: "blue.400",
+                                        color: "white"
+                                    }}
+                                >
+                                    View Repository
+                                </Button>
+                            </Link>
                         </CardFooter>
                     </Card>
                     <Card>
                         <CardHeader>
-                            <Heading size={Size}> Customer dashboard</Heading>
+                            <Heading size={Size}> GSC-2023</Heading>
                         </CardHeader>
                         <CardBody>
                             <Text>View a summary of all your customers over the last month.</Text>
