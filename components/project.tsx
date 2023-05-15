@@ -24,7 +24,7 @@ const Project = () => {
                 <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(250px, 1fr))' height="350px">
                     <Card>
                         <CardHeader>
-                            <Heading size={Size}> Creative Eyecare Centre</Heading>
+                            <Heading size={Size} > Creative Eyecare Centre</Heading>
                         </CardHeader>
                         <Flex
                             justify="center"
@@ -57,11 +57,27 @@ const Project = () => {
                         <CardHeader>
                             <Heading size={Size}> GSC-2023</Heading>
                         </CardHeader>
+                        <Flex>
+                            <Image src="/images/gsc-2023.png" width={350} height={350} alt="google" />
+                        </Flex>
                         <CardBody>
-                            <Text>View a summary of all your customers over the last month.</Text>
+                            <Text>Participated in a UBC Google Solution Challenge in solving 17 world problems using Google technologies.
+                            </Text>
                         </CardBody>
                         <CardFooter>
-                            <Button>View here</Button>
+                            <Link
+                                href="https://github.com/Jahu5474/gsc-2023"
+                            >
+                                <Button
+                                    variant="outline"
+                                    _hover={{
+                                        bg: "blue.400",
+                                        color: "white"
+                                    }}
+                                >
+                                    View Repository
+                                </Button>
+                            </Link>
                         </CardFooter>
                     </Card>
                     <Card>
