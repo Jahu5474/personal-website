@@ -18,6 +18,7 @@ const Project = () => {
             </Heading>
             <Flex
                 direction={{ base: "row", md: "column" }}
+                id="projects"
 
             >
 
@@ -82,7 +83,7 @@ const Project = () => {
                     </Card>
                     <Card>
                         <CardHeader>
-                            <Heading size={Size}> Customer dashboard</Heading>
+                            <Heading size={Size}> In Progress </Heading>
                         </CardHeader>
                         <CardBody>
                             <Text>View a summary of all your customers over the last month.</Text>
