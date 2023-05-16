@@ -12,7 +12,7 @@ const Project = () => {
             <Heading
                 mt={4}
                 mb={4}
-                size={Size}
+                size="md"
             >
                 Projects
             </Heading>
@@ -83,13 +83,25 @@ const Project = () => {
                     </Card>
                     <Card>
                         <CardHeader>
-                            <Heading size={Size}> In Progress </Heading>
+                            <Heading size={Size}> Ai Generator Cover Letters </Heading>
                         </CardHeader>
                         <CardBody>
-                            <Text>View a summary of all your customers over the last month.</Text>
+                            <Text>Ai generated Cover Letter for business and academic purposes.</Text>
                         </CardBody>
                         <CardFooter>
-                            <Button>View here</Button>
+                            <Link
+                                href="https://github.com/Jahu5474/meta-ai"
+                            >
+                                <Button
+                                    variant="outline"
+                                    _hover={{
+                                        bg: "blue.400",
+                                        color: "white"
+                                    }}
+                                >
+                                    View here
+                                </Button>
+                            </Link>
                         </CardFooter>
                     </Card>
                 </SimpleGrid>
